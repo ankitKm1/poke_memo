@@ -1,0 +1,134 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  --primary-red: #c02942;
+  --yellow-accent: #fce94f;
+  
+}
+
+body {
+  margin:0px;
+  background-color: var(--primary-red);
+  
+  
+}
+
+.screen {
+  position: relative;
+  width: 100%;
+  
+}
+
+header{
+  background-color: rgba(254, 254, 78, 0.9);
+  backdrop-filter: blur(1px);
+  position: sticky;
+  margin-bottom: 2rem; 
+  top:0px;
+  left: 0px;
+  height: 5rem;
+  width: inherit; 
+  z-index: 10;
+  border-bottom: 5px solid teal;
+  border-bottom-right-radius: .8rem;
+  border-bottom-left-radius: .8rem;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+}
+
+header>div {
+  display: flex;
+  justify-content: center;
+  margin: .5rem ;
+  padding: .5rem;
+  color: teal;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.score,.bestScore {
+  display: flex;
+  font-size: 1.4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.scores {
+  flex-direction: column;
+}
+.score {
+  border: 2px solid var(--primary-red);
+  border-radius: 1rem;
+  box-shadow: -1px 1px 1px teal, 0px -1px 1px teal;
+}
+
+.card {
+  background: white;
+  
+  margin-bottom: .5rem;
+  padding: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  border: .5px solid teal;
+  border-radius: 0.5rem;
+  
+  
+           
+}
+
+img {
+  
+  cursor: pointer;
+  
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  
+  
+}
+
+.grain {
+  background-color: rgba(255, 228, 72, .9);
+  
+  background-image: url(../src/assets/noise.svg);
+  backdrop-filter: blur(1rem);
+  margin: 1.8rem;
+  border-radius: .5rem;
+  
+  
+  
+}
+
+.pokeName {
+  color: teal;
+  
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.6rem;
+  line-height: .1rem;
+  font-weight: 600;
+  font-style: oblique;
+  text-align: center;
+  
+  
+  
+}
+
+.grain:hover{
+  cursor: pointer;
+  background-image: url();
+  
+}
+
